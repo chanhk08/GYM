@@ -1,0 +1,185 @@
+<!DOCTYPE html">
+<html>
+    <head>
+        <title>Gym Club - BMI Calculator</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+        <link rel="stylesheet" type="text/css" href="BMI.css">
+
+        <script src="BMI.js"></script>
+
+    </head>
+  
+    <div id="enterWebside">
+
+    </div>
+
+  <body>
+    
+    <div id="headerPicContainer">
+        <img class="active" src="BMItop.jpg">
+    </div>
+
+        <!-- start of the list  -->
+    <div id="StarterList">
+
+        <img id="logo" src="testlogo.png">
+
+        <div id="menu">
+            <ul>
+              <li>
+                <a href="ContactUs.html">Contact us</a>
+                <ul id="sub">
+                </ul>
+              </li>
+            </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="AboutUs.html">About us</a>
+              <ul id="sub">
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="Gym.html">Gym</a>
+              <ul id="sub">
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="BMI.html">BMI</a>
+              <ul id="sub">
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a></a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a></a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a></a>
+            </li>
+          </ul>
+        </div>
+  
+    </div>
+    <div id="StarterSamllList">
+
+        <div id="menuSml">
+          <ul>
+            <li>
+              <a href="#"><img src="btn.png" id="btn.png"></a>         
+              <ul id="sub">                                                <!--list-->
+                <li><a href="index.html" id="index.html">Home</a></li>                        
+                <li><a href="BMI.html">BMI</a></li>       
+                <li><a href="Gym.html">Gym</a></li>
+                <li><a href="AboutUs.html">About us</a></li>    
+                <li><a href="ContactUs.html">Contect us</a></li>                 
+              <!--list-->
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+    </div>
+        <!-- end of the list  --> 
+    <div id="MainBodySubject">
+        <p><span id="Subjectstyle">&emsp;BMI</span> Calculator</p>
+        <img src="arrow.png" id="arrow.png">
+    </div>
+
+    <div id="MainBody">
+        <div id="main1"><h1>What BMI is?</h1>
+            Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. View the BMI tables or use the tool below to compute yours.
+        </div>
+
+        <div id="main2"><h1></h1>
+            <img src="BMIContent1.jpg">
+        </div>
+    </div>
+
+    <div id="MainBody">
+        <div id="main3"><h1></h1>
+          <img src="BMIContent2.jpg">
+        </div>
+
+        <div id="main4"><h1>Why does BMI matter?</h1>
+          People who are classed as clinically obese possess a greater risk of developing diabetes, as well as cardiovascular diseases, cancer and suffering a stroke.
+          You can use the BMI tool to tell how healthy your weight is for your height.
+        </div>
+    </div>
+
+    <div id="MainBody">
+
+      <div id="main5"><h1>BMI Calculator</h1>
+          <form id="bmiForm">
+              Height(cm):&emsp; <input type="number" id="height" required><br>
+              <br>
+              Weight(kg):&emsp; <input type="number" id="weight" required><br>
+              <br>
+              <input type="submit" value="Calculate BMI">
+          </form>
+          <h2><p id="result"></p></h2>
+      
+          <script>
+              document.getElementById('bmiForm').addEventListener('submit', function(event) {
+                  event.preventDefault();
+                  var height = document.getElementById('height').value;
+                  var weight = document.getElementById('weight').value;
+                  var bmi = weight / ((height / 100) * (height / 100));
+                  document.getElementById('result').textContent = 'Your BMI is: ' + bmi.toFixed(2);
+              });
+          </script>
+
+      </div>
+
+      <div id="main6"><h1></h1>
+           <img src="BMIContent3.jpg">
+
+           <div id="bar"><h1></h1>
+          </div>
+      </div>
+
+    </div>
+
+
+    <div id="footer">
+        
+        <div id="footerButten"><a href="https://www.facebook.com/"><img src="fb.png" id="fb.png"></a></div>
+        <div id="footerButten"><a href="https://www.instagram.com/"><img src="ig.png" id="ig.png"></a></div>
+        <div id="footerButten"><a href="https://twitter.com/"><img src="x.png" id="x.png"></a></div>
+        <div id="footerText">2024 Gym Club by Hin Chan. All rights reserved.</div>
+    </div>
+
+
+
+  </body>
+</html>

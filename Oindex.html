@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script>
+
+  </script>
+  <style>
+    
+    body {
+      background: linear-gradient(to top, transparent 90%, black), url('testback.jpg');
+      background-size: 100%;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 0;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mainBody{
+      order: 3;
+      background-size: 100%;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 0;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      height: 5000px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /*
+    .mainPic {
+      order: 3;
+      position: absolute;
+      background: linear-gradient(to top, transparent 30%, black);
+      left: 0;
+      top: 0;
+      font-size: 18px;
+      width: 100%;
+    }
+*/
+
+    .logo {
+      order: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 350px;
+      height: 100px;
+    }
+
+    .footer {
+      order: 4;
+      position: static;
+      left: 0;
+      bottom: 0;
+      height: 300px;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+/*  .button {
+/*    background-color: transparent; /* 設定背景為透明 */
+/*    border: none; /* 移除邊框 */
+/*    color: white; /* 設定文字顏色 */
+/*    text-align: center; /* 文字置中 */
+/*    text-decoration: none; /* 移除文字裝飾 */
+/*    display: inline-block;
+/*    /*font-size: 20px; /* 設定文字大小 */
+/*    margin: 0px;
+/*    cursor: pointer; /* 當滑鼠移至按鈕上時，顯示為手指圖示 */
+/*    padding: 0; /* 移除內邊距 */
+/*  }
+/*/
+
+    .flex-container{ 
+      font-size: 20px;
+      /*background-color: green;*/
+      order: 2;
+      padding: 15px 0px;
+      width: 100%;
+      -webkit-flex-direction: row-reverse; 
+      -webkit-justify-content: space-between;
+      display: flex; 
+      height: 100px;
+      /*margin: 50px, 80px;*/
+      flex-grow: 1;
+    }
+    
+    /*-------------------------------------*/
+
+    .menu ul{
+      text-align: center;
+      list-style: none;
+      /*margin: 100px, 50px;*/
+      padding: 0px;
+      width: 175px;
+      background-color: blue;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .menu a{
+      transition: transform 0.3s ease-in-out;
+      text-decoration: none;
+      display: block;
+      padding: 10px 10px;
+      line-height: 1.2em;
+      color: white;
+    }
+    
+    .menu a:hover{
+      transform: scale(1.2);
+      /*background-color: lightgreen;*/
+      text-decoration: underline;
+      /*border-radius: 10px;*/
+    }
+    
+    .menu .sub{
+      position: absolute;
+      top: 100px;
+      /*background-color: black;*/
+    }
+    
+    .menu .sub a:hover{
+      /*background-color: lightblue;*/
+      text-decoration: underline;
+      /*border-radius: 10px;*/
+    }
+    
+    .menu .sub li{
+      overflow: hidden;
+      height: 0px;
+      -webkit-transition: height 500ms;
+      -moz-transition: height 500ms;
+      -o-transition: height 500ms;
+      transition: height 500ms;
+    }
+
+    .menu2 a{
+      text-align: center; 
+      transition: transform 0.3s ease-in-out;
+      text-decoration: none;
+      display: none;
+      padding: 10px 10px;
+      line-height: 1.2em;
+      color: white;
+    }
+
+    .menu2 a:hover{
+      transform: scale(1.2);
+      /*background-color: lightgreen;*/
+      text-decoration: underline;
+      /*border-radius: 10px;*/
+    }
+
+    /*
+    .menu ul.sub {
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+    */
+
+    .menu ul li:hover .sub li{
+      height: 40px;
+      /*width: 70px;*/
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .flex-container > .menu a {display: none !important;}
+      .flex-container > .menu a1{display: flex;}
+      .flex-container > .menu ul{width: 80px;}
+      .flex-container{-webkit-flex-direction: row}
+    }
+
+  </style>
+  </head>
+
+<body>
+
+  <div class="flex-container">
+
+  <img class="logo" src="testlogo.png" alt="testlogo.png">
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="#">About us</a>
+          <ul class="sub">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Sub Item 2</a></li>
+            <li><a href="#">Sub Item 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="#">Gym</a>
+          <ul class="sub">
+            <li><a href="#">Sub Item 4</a></li>
+            <li><a href="#">Sub Item 5</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="#">Contect us</a>
+          <ul class="sub">
+            <li><a href="#">Sub Item 4</a></li>
+            <li><a href="#">Sub Item 5</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="#">Calculator</a>
+          <ul class="sub">
+            <li><a href="#">BMI Calculator</a></li>
+            <li><a href="#">BMR Calculator</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="#">Media</a>
+          <ul class="sub">
+            <li><a href="#">Sub Item 4</a></li>
+            <li><a href="#">Sub Item 5</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li>
+          <a2 href="#"></a2>
+          <ul class="sub">
+            <li><a href="#">Sub Item 4</a></li>
+            <li><a href="#">Sub Item 5</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu2">
+      <ul>
+        <li>
+          <a href="#"><img src="btn.png" alt="btn.png"></a>
+          <ul class="sub">
+            <li><a href="#">Sub Item 4</a></li>
+            <li><a href="#">Sub Item 5</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!--
+  <div class="top-bar">
+      This is a top bar
+  </div> 
+  -->
+  <div class="mainBody">
+  </div>
+
+  <div class="footer">
+    这是底部的bar
+  </div>
+
+  <!--
+  <img class="mainPic" src="pic6.jpeg" alt="pic6.jpeg">
+  -->
+</body>
+</html>

@@ -1,0 +1,25 @@
+    body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('main.png');
+    background-size: cover;
+    background-position: center;
+    }
+
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: #4CAF50;
+        box-shadow: 0 10px 10px -10px rgba(0,0,0,0.6);
+      }
+
+      body {
+        background: linear-gradient(to top, transparent 50%, black), url('pic6.jpeg');
+        background-size: cover;
+        height: 10000px;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      <img class="mainPic" src="main.png" alt="main.png".\>

@@ -1,0 +1,537 @@
+/*------Start of body----------------------*/  
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            overflow: hidden;
+        }
+
+/*------End of body------------------------*/  
+/*------Start of header pic container------*/   
+
+        #headerPicContainer {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            position: top;
+            z-index: -1;
+        }
+
+        #headerPicContainer img {
+            width: 100%;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 2s;
+        }
+
+        #headerPicContainer img.active {
+            opacity: 1;
+        }
+
+/*-------End of header pic container------*/      
+/*------Start of logo---------------------*/ 
+
+        #logo {
+          z-index: 5;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 350px;
+          height: 100px;
+        }
+
+/*------End of logo----------------------*/ 
+/*------Start of Top buttons---------*/ 
+
+        #StarterList{ 
+          z-index: 5;
+          font-size: 20px;
+          padding-top: 15px;
+          width: 100%;
+          -webkit-flex-direction: row-reverse; 
+          -webkit-justify-content: space-evenly;
+          display: flex; 
+          flex-wrap: wrap;
+          height: calc(100vh - 315px);
+          background: linear-gradient(to top, transparent 50%, black);
+          transition: height 0.1s;
+          /*background-color: rgb(101, 24, 255, 0.2) /*for test only*/
+        }
+        /*-------butteons column-------*/
+        #menu ul{
+          text-align: center;
+          list-style: none;
+          padding: 0px;
+          width: 110px;
+          display: block;
+        }
+        /*--a butteon--*/    
+        #menu a{
+          transition: transform 0.3s ease-in-out;
+          text-decoration: none;
+          display: block;
+          padding: 10px 10px;
+          line-height: 1.2em;
+          color: white;
+        }
+        /*--act with a butteon column--*/    
+        #menu a:hover{
+          transform: scale(1.2);
+          text-decoration: underline;
+          color: orange;
+        }
+        /*-------butteons row-------*/
+        #menu #sub{
+          position: absolute;
+          top: 100px;
+        }
+
+        /*--act with a butteon row--*/    
+        #menu #sub a:hover{
+          /*background-color: lightblue;*/
+          text-decoration: underline;
+          color: orange;
+          /*border-radius: 10px;*/
+        }
+
+        /*--butteons row list--*/         
+        #menu #sub li{
+          overflow: hidden;
+          height: 0px;
+          -webkit-transition: height 500ms;
+        }
+
+        /*--act with a butteon row--*/     
+        #menu ul li:hover #sub li{
+          height: 40px;
+        }
+/*------End of Top buttons---------*/ 
+/*------Start of samll menu buttons---------*/ 
+
+        #StarterSamllList{
+          z-index: 5;
+          position: absolute;
+          right: 0;
+          top: 15px;
+          height: 80px;
+          display: none;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #menuSml ul{
+          text-align: center;
+          list-style: none;
+          padding-bottom: 10px;
+          width: 95px;
+          border-radius: 10px;
+          display: block;
+        }
+    
+        #menuSml a{
+          text-align: center;
+          transition: transform 0.3s ease-in-out;
+          text-decoration: none;
+          padding: 0px 10px;
+          line-height: 1.2em;
+          color: white;
+        }
+
+        #menuSml #sub{
+          position: absolute;
+          width: 100px;
+          top: 80px;
+          right: 20px;
+        }
+
+        #menuSml #sub a:hover{
+          text-decoration: underline;
+          color: orange;
+        }
+  
+        #menuSml a:hover{
+          transform: scale(1.2);
+          text-decoration: underline;
+          color: orange;
+        }
+   
+        #menuSml ul li:hover #sub li{
+          height: 40px;
+          padding: 0px 0px;
+        }
+
+        #menuSml #sub li{
+          overflow: hidden;
+          text-align: right;
+          height: 0px;
+          width: 100%;
+          -webkit-transition: height 500ms;
+        }
+
+/*------End of samll menu buttons---------*/
+/*------Start of Main Body subject---------*/ 
+
+#MainBodySubject{ 
+  position: relative;
+  transition: font-size 0.5s ease;
+  box-sizing: border-box;
+  font-size: 80px;
+  padding: 15px 27px;
+  color: rgb(255,255,255,0);
+  text-shadow: 5px 5px 5px black;
+  width: 100%;
+  height: 300px;
+  /*background-color: red;*/
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 4;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-name: enterWebsidewd;
+}
+
+#Subjectstyle{
+  color: rgb(255, 165, 0);         
+}
+
+#MainBodySubject p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  transition: font-size 0.5s ease;
+}
+
+/*------End of Main Body subject---------*/ 
+/*------Start of Main Body----------------*/ 
+
+#MainBody{
+  box-sizing: border-box;
+  padding: 30px; 
+  margin: 0;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  background-color:#1B1B1B;
+  color: orange;
+  line-height: 1; 
+  -webkit-column-span: all; 
+}
+
+/*------End of Main Body------------------*/ 
+/*------Start of Main Body----------------*/ 
+
+#MainBody{
+  box-sizing: border-box;
+  padding: 30px; 
+  margin: 0;
+  min-height: 200px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  background-color:#1B1B1B;
+}
+
+#MainBody td{
+height: auto;
+color: white;
+flex-grow: 1;
+margin: 14px;
+padding: 10px 25px;
+text-align: justify;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: light;
+font-weight: 200;
+line-height: 1.5;
+
+}
+
+/*------End of Main Body------------------*/ 
+/*------Start of footer----------------*/
+
+  #footer {
+    position: static;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+    margin: 0;
+    padding: 0px 54px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #footerButten{
+    flex-grow: 1;
+    min-width: 100px;
+  }
+
+  #footerText{
+    margin-left: 100px;
+    text-align: right;
+    font-size: 15px;
+    flex-grow: 10;
+    flex-direction: column;
+  }
+
+/*------End of footer----------------*/
+/*------Start of page content--------------------------------------------------*/
+#main1, #main2, #main3, #main4, #main5, #main6{
+    height: auto;
+    color: white;
+    width: 10px;
+    -webkit-column-count: 1;
+    flex-grow: 1;
+    margin: 14px;
+    padding: 10px 0px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: light;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+#main1{
+    /*height: auto;*/
+    /*width: 100%;*/
+
+    max-height: auto;
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#main2{
+    /*height: auto;*/
+    /*width: 100%;*/
+    max-width: 20%;
+    max-height: auto;
+    order: 2;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#main3{
+    /*height: auto;*/
+    /*width: 100%;*/
+    max-width: 20%;
+    max-height: auto;
+    order: 3;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#main4{
+    /*height: auto;*/
+    /*width: 100%;*/
+    max-width: 20%;
+    max-height: auto;
+    order: 4;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+#main5{
+    /*height: auto;*/
+    /*width: 100%;*/
+    max-width: 20%;
+    max-height: auto;
+    order: 5;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#main6{
+    /*height: auto;*/
+    /*width: 100%;*/
+    max-width: 100%;
+    max-height: auto;
+    order: 6;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#main1 img:hover, #main2 img:hover, #main3 img:hover, #main4 img:hover, #main5 img:hover, #main6 img:hover {
+  transform: scale(1.2);
+}
+
+#textDiv {
+  width: 1415px;
+  height: 350px;
+}
+/*---------------------*/
+
+#header img{
+    float: left;
+    margin-right: 10px;
+}
+
+#header div{
+    clear: none;
+}
+
+#main1 img, #main2 img, #main3 img, #main4 img, #main5 img, #main6 img{ 
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#main1 h1, #main2 h1, #main3 h1, #main4 h1, #main5 h1, #main6 h1{ 
+    text-align: left;
+    font-weight: 600;
+    color: orange;
+    line-height: 1; 
+    -webkit-column-span: all; 
+}
+/*------End of page content--------------------------------------------------*/
+/*-----------media---------------*/
+
+@media only screen and (max-width: 1200px){
+  #MainBodySubject > *{font-size: 40px;}
+}
+
+@media only screen and (max-width: 700px){
+  #MainBodySubject > *{font-size: 28px;}
+}
+
+@media only screen and (max-width: 1500px){
+    #StarterList{height: calc(100vh - 385px);}
+    #MainBodySubject > img{display: none !important;}
+}
+
+@media only screen and (max-width: 1450px) {
+    #StarterList{height: calc(100vh - 460px);}
+}
+
+@media only screen and (max-width: 1350px) {
+    #StarterList{height: calc(100vh - 535px);}
+}
+
+@media only screen and (max-width: 1250px) {
+  #StarterList{height: calc(100vh - 610px);}
+}
+
+@media only screen and (max-width: 1150px) {
+  #StarterList{height: calc(100vh - 685px);}
+}
+
+@media only screen and (max-width: 1050px) {
+ #StarterList{height: calc(100vh - 760px);}
+}
+
+@media only screen and (max-width: 950px) {
+  #StarterList{height: calc(100vh - 760px);}
+}
+
+@media only screen and (max-width: 850px) {
+    #StarterList{height: calc(100vh - 836px);}
+}          
+@media only screen and (max-width: 750px) {
+    #StarterList{height: calc(100vh - 910px);}
+}
+
+@media only screen and (max-width: 650px) {
+  #StarterList{height: calc(100vh - 985px);}
+}
+
+@media only screen and (max-width: 550px) {
+  #StarterList{height: calc(100vh - 1060px);}
+}
+
+@media only screen and (max-width: 450px) {
+  #StarterList{height: calc(100vh - 1135px);}
+}
+
+@media only screen and (max-width: 350px) {
+  #StarterList{height: calc(100vh - 1210px);}
+}
+
+@media only screen and (max-width: 950px) {
+    #StarterList > #menu a{display: none;}
+    #StarterSamllList{display: flex;}
+    /*#block{-webkit-flex-direction: row;}*/
+    #main1 {width: 100%;}
+    #main2 {width: 100%; max-height: 300px;}
+    #main3 {width: 100%; max-height: 300px; order: 4}
+    #main4 {width: 100%; order: 3}
+    #main5 {width: 100%;}
+    #main6 {width: 100%; max-height: 300px;}
+    #footer {height: 200px; padding: 30px 60px; text-align: center; justify-content: center;}
+    #footerText{width: 100%; text-align: center; margin: 0px -50px;}
+}
+
+#enterWebside{
+  z-index: 3;
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  animation-name: enterWebsidebg;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes enterWebsidewd {
+  from {color: rgb(255,255,255,0);}
+  to {color: rgb(255,255,255,1);}
+}
+
+@keyframes enterWebsidebg {
+  from {background-color: black;}
+  to {background-color:rgba(0, 0, 0, 0.0)}
+}
+
+#MainBodySubject img{
+  display: block;
+  opacity: 0;
+  animation: bounce 1s infinite 3s, appear 2s linear 3s forwards;
+  position: absolute;
+  bottom: 35%;
+  right: 7%;
+  text-align: right;
+}
+
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}     
+
+@keyframes bounce {
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+}     
+

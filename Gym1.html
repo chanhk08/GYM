@@ -1,0 +1,75 @@
+<style>
+
+    body{
+        box-sizing: border-box;
+        padding: 30px; 
+        margin: 0;
+        min-height: auto;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        -webkit-flex-direction: row;
+        -webkit-justify-content: center;
+        background-color:#1B1B1B;
+        color: white;
+        line-height: 1; 
+    }
+
+    #main1, #main2{
+              height: auto;
+              color: white;
+              width: 10px;
+
+              flex-grow: 1;
+              margin: 14px;
+              padding: 10px 25px;
+              text-align: justify;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 16px;
+              font-weight: light;
+              font-weight: 200;
+              line-height: 1.5;
+          }
+
+    #main1{
+        *height: auto;
+        order: 1;
+    }
+    
+    #main2{
+        order: 2;
+        width: 50%;
+    }          
+
+    h1{
+        text-align: left;
+        font-weight: 600;
+        color: orange;
+        line-height: 1; 
+        -webkit-column-span: all; 
+    }
+
+    @media only screen and (max-width: 950px) {
+    #StarterList > #menu a{display: none;}
+    #StarterSamllList{display: flex;}
+    /*#block{-webkit-flex-direction: row;}*/
+    #main1 {width: 100%;}
+    #main2 {width: 100%;}
+}
+
+</style>
+
+<html>
+
+    <body>
+        <div id="main1"><H1>Wide-Grip Lat Pull-Down</H1>
+            <a style="font-family: Arial, Helvetica, sans-serif;">The pulldown exercise works the back muscles and is performed at a workstation with adjustable resistance, usually plates.
+
+                While seated, you pull a hanging bar toward you to reach chin level, then release it back up with control for one repetition. This exercise can be done as part of an upper-body strength workout.</h1>
+        </div>
+        <div id="main2">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UWhyxvCCzhw?si=lqhE8ullnpqmNB6X&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </body>
+</html>

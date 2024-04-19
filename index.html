@@ -1,0 +1,188 @@
+<!DOCTYPE html">
+<html>
+    <head>
+        <title>Gym Club</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <script src="index.js"></script>
+
+    </head>
+  
+    <div id="enterWebside">
+
+    </div>
+
+  <body>
+    
+    <div id="headerPicContainer">
+        <img class="active" src="pic1.jpg">
+        <img src="pic2.jpg">
+        <img src="pic3.jpg">
+        <img src="pic4.jpg">
+        <img src="pic5.jpg">
+        <img src="pic6.jpg">
+    </div>
+
+    <script>
+        var images = document.querySelectorAll('#headerPicContainer img');
+        var currentIndex = 0;
+        function slideShow() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }
+        setInterval(slideShow, 3000);
+    </script>
+
+        <!-- start of the list  -->
+    <div id="StarterList">
+
+        <img id="logo" src="testlogo.png">
+
+        <div id="menu">
+            <ul>
+              <li>
+                <a href="ContactUs.html">Contact us</a>
+                <ul id="sub">
+                </ul>
+              </li>
+            </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="AboutUs.html">About us</a>
+              <ul id="sub">
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <li><a href="Gym.html">Gym</a></li>
+              <ul id="sub">
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="BMI.html">BMI</a>
+              <ul id="sub">
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a></a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a></a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a></a>
+            </li>
+          </ul>
+        </div>
+  
+    </div>
+    <div id="StarterSamllList">
+
+        <div id="menuSml">
+          <ul>
+            <li>
+              <a href="#"><img src="btn.png" id="btn.png"></a>         
+              <ul id="sub">                                                <!--list-->
+                <li><a href="index.html" id="index.html">Home</a></li>                        
+                <li><a href="BMI.html">BMI</a></li>       
+                <li><a href="Gym.html">Gym</a></li>
+                <li><a href="AboutUs.html">About us</a></li>    
+                <li><a href="ContactUs.html">Contect us</a></li>                 
+              <!--list-->
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+    </div>
+        <!-- end of the list  --> 
+        
+    <div id="MainBodySubject">
+        <p><span id="Subjectstyle">&emsp;Welcome</span> to the GYM CLUB</p>
+        <img src="arrow.png" id="arrow.png">
+    </div>
+
+    <div id="MainBody">
+        <div id="main1"><h1>Benefits of Physical Activity</h1>
+            Regular physical activity is one of the most important things you can do for your health. Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities.<br>
+            <br>
+            Adults who sit less and do any amount of moderate-to-vigorous physical activity gain some health benefits. Only a few lifestyle choices have as large an impact on your health as physical activity.<br>
+            <br>
+            Everyone can experience the health benefits of physical activity – age, abilities, ethnicity, shape, or size do not matter.<br>
+        </div>
+
+        <div id="main2"><h1></h1>
+            <img src="indexConteot1.jpg">
+        </div>
+    </div>
+
+    <div id="MainBody">
+        <div id="main3"><h1></h1>
+          <img src="indexConteot2.jpg">
+        </div>
+
+        <div id="main4"><h1>Weight Management</h1>
+          Both eating patterns and physical activity routines play a critical role in weight management. You gain weight when you consume more calories through eating and drinking than the amount of calories you burn, including those burned during physical activity.<br>
+          <br>
+          After studying 80,000 adults, the team concluded that strength training is more effective at prolonging life than cardio workouts. The study considered multiple health variables, such as age, health status, and lifestyle. Even when accounting for these factors, the study found that strength training twice a week reduced the likelihood of dying from cancer by 31%. Actually, the overall probability of any kind of premature death decreased by 23%. <br>
+        </div>
+    </div>
+
+    <div id="MainBody">
+
+      <div id="main5"><h1>What Kind of Physical Activity Should You Try?</h1>
+        While undertaking any type of physical activity may significantly reduce cancer risk, some types of exercise may be even more effective. <br>
+        <br>
+        Regular exercise can significantly improve one’s overall health concerning cancer, other serious diseases, mental health, and general wellbeing. Many researchers continue to explore how best to reap the benefits of a well-balanced lifestyle.<br>
+        <br>
+        Getting the body moving can be particularly challenging during winter when many parts of the country are under an icy blanket of snow. Undoubtedly it is more comfortable to stay snuggled up on the couch dreaming of spring. However, new research shows that physical activity prevents cancer – and the gold standard is not as unattainable as one might think. 
+      </div>
+
+      <div id="main6"><h1></h1>
+        <img src="indexConteot3.jpg">
+      </div>
+
+    </div>
+
+
+    <div id="footer">
+        
+        <div id="footerButten"><a href="https://www.facebook.com/"><img src="fb.png" id="fb.png"></a></div>
+        <div id="footerButten"><a href="https://www.instagram.com/"><img src="ig.png" id="ig.png"></a></div>
+        <div id="footerButten"><a href="https://twitter.com/"><img src="x.png" id="x.png"></a></div>
+        <div id="footerText">2024 Gym Club by Hin Chan. All rights reserved.</div>
+    </div>
+
+  </body>
+</html>

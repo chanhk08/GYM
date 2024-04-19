@@ -1,0 +1,76 @@
+<style>
+
+    body{
+        box-sizing: border-box;
+        padding: 30px; 
+        margin: 0;
+        min-height: auto;
+        max-height: 400px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        -webkit-flex-direction: row;
+        -webkit-justify-content: center;
+        background-color:#1B1B1B;
+        color: white;
+        line-height: 1; 
+    }
+
+    #main1, #main2{
+              height: auto;
+              color: white;
+              width: 10px;
+
+              flex-grow: 1;
+              margin: 14px;
+              padding: 10px 25px;
+              text-align: justify;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 16px;
+              font-weight: light;
+              font-weight: 200;
+              line-height: 1.5;
+          }
+
+    #main1{
+        *height: auto;
+        order: 1;
+    }
+
+    #main2{
+        order: 2;
+        width: 50%;
+    }          
+
+    h1{
+        text-align: left;
+        font-weight: 600;
+        color: orange;
+        line-height: 1; 
+        -webkit-column-span: all; 
+    }
+
+    @media only screen and (max-width: 950px) {
+    #StarterList > #menu a{display: none;}
+    #StarterSamllList{display: flex;}
+    /*#block{-webkit-flex-direction: row;}*/
+    #main1 {width: 100%;}
+    #main2 {width: 100%;}
+}
+
+</style>
+
+<html>
+
+    <body>
+        <div id="main1"><H1>Seated Row</H1>
+            <a style="font-family: Arial, Helvetica, sans-serif;"> The seated cable row develops the muscles of the back and the forearms. It is an excellent all-around compound exercise for developing the middle back while offering useful arm work as well.1
+
+                The seated cable row is performed on a weighted horizontal cable machine with a bench and footplates. This can be a stand-alone piece of equipment or part of a multi-gym. Seated cable rows can be used as part of an upper-body strength workout. For example, in this series of exercises for new weight trainers, the seated cable row follows the triceps pushdown, which also uses the cable machine.</h1>
+        </div>
+        <div id="main2">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NNRqX54pj28?si=kpOe4Lqv_VDRCUtz&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </body>
+</html>

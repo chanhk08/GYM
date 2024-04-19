@@ -1,0 +1,231 @@
+<!DOCTYPE html">
+<html>
+    <head>
+        <title>Gym Club - Contact us</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+        <link rel="stylesheet" type="text/css" href="ContactUs.css">
+
+        <script src="ContactUs.js"></script>
+
+    </head>
+  
+    <div id="enterWebside">
+
+    </div>
+
+  <body>
+    
+    <div id="headerPicContainer">
+        <img class="active" src="ContactUsTop.jpg">
+    </div>
+
+        <!-- start of the list  -->
+    <div id="StarterList">
+
+        <img id="logo" src="testlogo.png">
+
+        <div id="menu">
+            <ul>
+              <li>
+                <a href="ContactUs.html">Contact us</a>
+                <ul id="sub">
+                </ul>
+              </li>
+            </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="AboutUs.html">About us</a>
+              <ul id="sub">
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="Gym.html">Gym</a>
+              <ul id="sub">
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="BMI.html">BMI</a>
+              <ul id="sub">
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a></a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a></a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a></a>
+            </li>
+          </ul>
+        </div>
+  
+    </div>
+    <div id="StarterSamllList">
+
+        <div id="menuSml">
+          <ul>
+            <li>
+              <a href="#"><img src="btn.png" id="btn.png"></a>         
+              <ul id="sub">                                                <!--list-->
+                <li><a href="index.html" id="index.html">Home</a></li>                        
+                <li><a href="BMI.html">BMI</a></li>       
+                <li><a href="Gym.html">Gym</a></li>
+                <li><a href="AboutUs.html">About us</a></li>    
+                <li><a href="ContactUs.html">Contect us</a></li>                 
+              <!--list-->
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+    </div>
+        <!-- end of the list  --> 
+    <div id="MainBodySubject">
+        <p><span id="Subjectstyle">&emsp;Contact</span> us</p>
+        <img src="arrow.png" id="arrow.png">
+    </div>
+
+    <div id="MainBody">
+        <div id="main1"><h1>Input your contact information.</h1>
+          <form name="f1" onSubmit="print_result()">
+            <table>
+              <tr>
+                <td>Name</td>
+                <td>
+                  <!-- (a) -->
+                  <input type="text" name="name" pattern="^[A-Z][a-z]*"
+                         title="Capital first character" required="required"/>
+                </td>
+              </tr>
+        
+              <tr>
+                <td>Age</td>
+                <td>
+                  <!-- (b) -->
+                  <input type="number" name="age" min="18" required="required"/>
+                </td>
+              </tr>
+        
+              <tr>
+                <td>GYM Experience(Years):</td>
+                <td>
+                  <!-- (c) -->
+                  <input type="number" name="year" required="required"/>
+                </td>
+              </tr>
+        
+              <tr>
+                <td>Daily available workout Time</td>
+                <td>
+                  <!-- (d) -->
+                  <input type="text" title="HH:MM:SS" name="time"
+                         pattern="([01]?\d|2[0-3]):([0-5]?\d):([0-5]?\d)" required="required"/>
+                </td>
+              </tr>
+        
+              <tr>
+                <td>Contect number</td>
+                <td>
+                  <!-- (e) -->
+                  <input type="text" name="mobile" pattern="[0-9]{8}"
+                         title="Please enter a 8 digite mobile number" required="required"/>
+        
+                </td>
+              </tr>
+
+              <tr>
+                <td>Contect email address</td>
+                <td>
+                  <!-- (e) -->
+                  <input type="email" title="email" name="email" required="required"/>
+        
+                </td>
+              </tr>
+        
+              <tr>
+                <td>Gender</td>
+                <td>
+                  <input type="radio" name="gender" value="M" required="required" />Male
+                  <input type="radio" name="gender" value="F" />Female
+                </td>  
+              </tr>
+        
+              <tr>
+                <td>Favorite experience</td>
+                <td>
+                  <input type="checkbox" name="gymex" value="back" />Pull-Down
+                  <input type="checkbox" name="gymex" value="chase" />Push-up
+                  <input type="checkbox" name="gymex" value="leg" />Back Squat
+                  <br />
+                  <input type="checkbox" name="gymex" value="back" />Seated Row
+                  <input type="checkbox" name="gymex" value="back" />Pull-up
+                  <input type="checkbox" name="gymex" value="chase" />Bench Press
+                </td>
+              </tr>
+        
+              <tr>
+                <td>Your body type</td>
+                <td>
+                  <select name="bodytp">
+                    <option value="">Please select one body type</option>
+                    <option value="average">Average</option>
+                    <option value="thin">Thin</option>
+                    <option value="muscular">Muscular</option>
+                    <option value="fat">Fat</option>
+                  </select>
+                </td>  
+              </tr>
+            </table>
+            <br />
+        
+            <div id="subposition">
+              <input type="submit" value="Submit" />
+            </div>
+
+          </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        
+        <div id="footerButten"><a href="https://www.facebook.com/"><img src="fb.png" id="fb.png"></a></div>
+        <div id="footerButten"><a href="https://www.instagram.com/"><img src="ig.png" id="ig.png"></a></div>
+        <div id="footerButten"><a href="https://twitter.com/"><img src="x.png" id="x.png"></a></div>
+        <div id="footerText">2024 Gym Club by Hin Chan. All rights reserved.</div>
+    </div>
+
+
+
+  </body>
+</html>
